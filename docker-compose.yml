@@ -1,0 +1,10 @@
+
+
+services:
+  app:
+    build: .
+    container_name: app-contenedor
+
+    ports:
+      - "8080:8080"
+    command: "java -jar target/sqlitedb-1.0-SNAPSHOT.jar"
